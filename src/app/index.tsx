@@ -1,13 +1,7 @@
-import { Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Redirect } from "expo-router";
 
+const Home = () => {
+  return <Redirect href="/(auth)/welcome" />;
+};
 
-export default function HomeScreen() {
-  return (
-    <SafeAreaView className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">
-        Welcome to Nativewind!
-      </Text>
-    </SafeAreaView>
-  );
-}
+export default Home;
