@@ -1,3 +1,4 @@
+import CustomButton from "@/components/CustomButton";
 import { onboarding } from "@/constants";
 import { router } from "expo-router";
 import { useRef, useState } from "react";
@@ -50,6 +51,8 @@ const Onboarding = () => {
           </View>
         ))}
       </Swiper>
+
+      <CustomButton title="Next" className="w-11/12 mt-10" />
     </SafeAreaView>
   );
 };
